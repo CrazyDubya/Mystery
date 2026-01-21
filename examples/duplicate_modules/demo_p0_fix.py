@@ -28,7 +28,7 @@ def analyze_before_state():
     
     before_dir = Path(__file__).parent / "before" / "core"
     
-    modules = ["goals.py", "schedules.py"]
+    modules = ["goals.py", "schedules.py", "interactions.py", "relationships.py", "gossip.py"]
     
     print("📊 Duplicate Modules Analysis:\n")
     
@@ -64,7 +64,7 @@ def analyze_after_state():
     
     after_dir = Path(__file__).parent / "after" / "core" / "npc"
     
-    modules = ["goals.py", "schedules.py"]
+    modules = ["goals.py", "schedules.py", "interactions.py", "relationships.py", "gossip.py"]
     
     print("✅ Consolidated Modules:\n")
     
@@ -96,7 +96,7 @@ def show_improvement():
     before_dir = Path(__file__).parent / "before" / "core"
     after_dir = Path(__file__).parent / "after" / "core" / "npc"
     
-    modules = ["goals.py", "schedules.py"]
+    modules = ["goals.py", "schedules.py", "interactions.py", "relationships.py", "gossip.py"]
     
     before_total = 0
     after_total = 0
